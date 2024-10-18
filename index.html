@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Image Gallery</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Image Gallery</h1>
+        <p>Explore the beauty of Nature, Seasons, Food, and Cities</p>
+    </header>
+
+    <div class="category-buttons">
+        <button onclick="filterImages('all')">Home</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('seasons')">Seasons</button>
+        <button onclick="filterImages('food')">Food</button>
+        <button onclick="filterImages('cities')">Cities</button>
+    </div>
+
+    <div id="image-gallery" class="gallery"></div>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <footer>
+        <p>Thank you for visiting my gallery!</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
